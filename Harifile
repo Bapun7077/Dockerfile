@@ -1,0 +1,6 @@
+FROM ubuntu
+WORKDIR /tmp
+RUN echo "hi bapun" > /tmp/bapunfile
+ENV myname bapun
+COPY linuxfile /etc
+ADD tar.gz.devops /home
